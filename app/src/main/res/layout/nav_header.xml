@@ -21,6 +21,7 @@
         android:textColor="#FFF"
         android:textSize="14sp"/>
 
+
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
@@ -28,6 +29,6 @@
         android:layout_above="@+id/mail"
         android:text="张三"
         android:textColor="#FFF"
-        android:textSize="14sp"/>
+        android:textSize="24sp"/>
 
 </RelativeLayout>

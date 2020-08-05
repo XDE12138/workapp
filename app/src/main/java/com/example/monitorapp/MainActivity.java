@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mBtnMe = findViewById(R.id.btn_me);
+        /*mBtnMe = findViewById(R.id.btn_me);
         mBtnMe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, MeViewActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
 
         mBtnMe = findViewById(R.id.btn_people);

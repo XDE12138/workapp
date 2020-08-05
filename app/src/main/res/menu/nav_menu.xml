@@ -5,21 +5,25 @@
     android:layout_height="match_parent">
     <group>
         <item
+            android:id="@+id/nav_number"
+            android:icon="@drawable/nav_number"
+            android:title="000001"/>
+        <item
             android:id="@+id/nav_call"
             android:icon="@drawable/nav_call"
-            android:title="Call"/>
+            android:title="1234567890"/>
         <item
             android:id="@+id/nav_friends"
             android:icon="@drawable/nav_friends"
-            android:title="Friends"/>
-        <item
-            android:id="@+id/nav_location"
-            android:icon="@drawable/nav_location"
-            android:title="Location"/>
+            android:title="管理科"/>
         <item
             android:id="@+id/nav_mail"
             android:icon="@drawable/nav_mail"
             android:title="Mail"/>
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/nav_setting"
+            android:title="Setting"/>
     </group>
 
 </menu>
