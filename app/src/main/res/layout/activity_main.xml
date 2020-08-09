@@ -51,7 +51,7 @@
                 android:id="@+id/btn_people"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="人员"
+                android:text="搜索"
                 style="?android:attr/buttonStyle"
                 android:layout_weight="1"/>
 
@@ -59,7 +59,7 @@
                 android:id="@+id/btn_textview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="设备"
+                android:text="设备情况"
                 style="?android:attr/buttonStyle"
                 android:layout_weight="1"/>
 
@@ -69,6 +69,14 @@
                 android:layout_height="match_parent"
                 android:text="个人"
                 android:layout_weight="1"/>-->
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="登录"
+                style="?android:attr/buttonStyle"
+                android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
 

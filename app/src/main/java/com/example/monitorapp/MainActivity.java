@@ -16,12 +16,14 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.monitorapp.ui.login.LoginActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
     private Button mBtnThing;
     private Button mBtnMe;
-    private Button mBtnPeople;
+    private Button mBtnLogin;
     private DrawerLayout mDrawerLayout;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -71,7 +73,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        mBtnLogin = findViewById(R.id.btn_login);
+        mBtnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //跳转到登录界面
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
         }
+
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
