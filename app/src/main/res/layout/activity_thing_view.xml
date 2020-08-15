@@ -15,7 +15,12 @@
         android:layout_weight="0"
         />
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+   <!-- <LinearLayout
         android:id="@+id/situation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -258,7 +263,7 @@
 
 
         </LinearLayout>
-    </LinearLayout>
+    </LinearLayout>-->
 
 
 </LinearLayout>
