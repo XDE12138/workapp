@@ -1,11 +1,11 @@
 package com.example.monitorapp;
 
-public class Fruit {
+public class Device {
     private String name;
 
     private int imageId;
 
-    public Fruit(String name, int imageId) {
+    public Device(String name, int imageId) {
         this.name = name;
         this.imageId = imageId;
     }

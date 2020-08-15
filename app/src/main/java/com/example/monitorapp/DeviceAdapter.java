@@ -14,10 +14,10 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> {
+public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.ViewHolder> {
     private Context mContext;
 
-    private List<Fruit> mFruitList;
+    private List<Device> mDeviceList;
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         CardView cardView;
@@ -32,8 +32,8 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
         }
     }
 
-    public FruitAdapter(List<Fruit> fruitList) {
-        mFruitList = fruitList;
+    public DeviceAdapter(List<Device> deviceList) {
+        mDeviceList = deviceList;
     }
 
     @Override
@@ -47,13 +47,13 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Fruit fruit = mFruitList.get(position);
-        holder.fruitName.setText(fruit.getName());
-        Glide.with(mContext).load(fruit.getImageId()).into(holder.fruitImage);
+        Device device = mDeviceList.get(position);
+        holder.fruitName.setText(device.getName());
+        Glide.with(mContext).load(device.getImageId()).into(holder.fruitImage);
     }
 
     @Override
     public int getItemCount() {
-        return mFruitList.size();
+        return mDeviceList.size();
     }
 }

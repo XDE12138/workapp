@@ -9,20 +9,22 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.Future;
 
 public class ThingViewActivity extends AppCompatActivity {
 
-    private Fruit[] fruits = {new Fruit("正常", R.drawable.kuang1),
-            new Fruit("故障", R.drawable.kuang2),
-            new Fruit("正常", R.drawable.kuang5),
-            new Fruit("正常", R.drawable.kuang7),
-            new Fruit("正常", R.drawable.kuang8),
-            new Fruit("未工作", R.drawable.kuang9)};
+    private Device[] devices = {new Device("正常", R.drawable.kuang1),
+            new Device("故障", R.drawable.kuang2),
+            new Device("故障", R.drawable.kaung3),
+            new Device("正常", R.drawable.kaung4),
+            new Device("正常", R.drawable.kuang5),
+            new Device("未运行", R.drawable.kaung6),
+            new Device("正常", R.drawable.kuang7),
+            new Device("正常", R.drawable.kuang8),
+            new Device("未运行", R.drawable.kuang9)};
 
-    private List<Fruit> fruitList = new ArrayList<>();
+    private List<Device> deviceList = new ArrayList<>();
 
-    private FruitAdapter adapter;
+    private DeviceAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,18 +33,18 @@ public class ThingViewActivity extends AppCompatActivity {
 
         initFruits();
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
         recyclerView.setLayoutManager(layoutManager);
-        adapter = new FruitAdapter(fruitList);
+        adapter = new DeviceAdapter(deviceList);
         recyclerView.setAdapter(adapter);
     }
 
     private void initFruits() {
-        fruitList.clear();
+        deviceList.clear();
         for (int i = 0; i < 50; i++) {
             Random random = new Random();
-            int index = random.nextInt(fruits.length);
-            fruitList.add(fruits[index]);
+            int index = random.nextInt(devices.length);
+            deviceList.add(devices[index]);
         }
     }
 }
